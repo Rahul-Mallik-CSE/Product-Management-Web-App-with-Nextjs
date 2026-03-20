@@ -1,9 +1,15 @@
 /** @format */
 
-import React from "react";
+"use client";
 
-const page = () => {
-  return <div>page</div>;
+import React from "react";
+import { Container } from "@/components/StyledComponents/Container";
+const ProductsPage = () => {
+  return (
+    <Container>
+      <h1 className="text-2xl font-bold mb-4">Products Page</h1>
+    </Container>
+  );
 };
 
-export default page;
+export default ProductsPage;
