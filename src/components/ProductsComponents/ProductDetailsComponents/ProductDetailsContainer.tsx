@@ -40,7 +40,7 @@ const ProductDetailsContainer = ({
     });
 
   React.useEffect(() => {
-    if (data) {
+    if (isEditDrawerOpen && data) {
       form.setFieldsValue({
         title: data.title,
         description: data.description,
@@ -49,7 +49,7 @@ const ProductDetailsContainer = ({
         stock: data.stock,
       });
     }
-  }, [data, form]);
+  }, [data, form, isEditDrawerOpen]);
 
   const product = data as ProductDetails | undefined;
 
