@@ -43,7 +43,7 @@ const ImageView = ({ title, thumbnail, images }: ImageViewProps) => {
                 className="h-full! w-full!"
                 style={{ objectFit: "cover" }}
                 fallback={fallbackImage}
-                preview={false}
+                preview
               />
             </div>
           ))}
