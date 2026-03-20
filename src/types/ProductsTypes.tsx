@@ -14,7 +14,6 @@ export interface Product {
 
 /** Detailed product information for product details view. */
 export interface ProductDetails extends Product {
-  productId: number;
   description: string;
   price: number;
   discountPercentage: number;
@@ -49,6 +48,10 @@ export interface ProductDetails extends Product {
   };
   thumbnail: string;
   images: string[];
+}
+// Props for the product details container component, including the product ID to fetch.
+export interface ProductDetailsContainerProps {
+  productId: number;
 }
 
 /** API response shape for paginated products query results. */

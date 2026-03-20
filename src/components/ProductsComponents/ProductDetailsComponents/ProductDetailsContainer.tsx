@@ -13,6 +13,7 @@ import type { AppDispatch, RootState } from "@/redux/store";
 import type {
   EditProductFormValues,
   ProductDetails,
+  ProductDetailsContainerProps,
 } from "@/types/ProductsTypes";
 import Details from "./Details";
 import EditDrawer from "./EditDrawer";
@@ -21,7 +22,9 @@ import DetailsPageSkeleton from "./DetailsPageSkeleton";
 import styles from "@/scssstyle/CommonStyles.module.scss";
 import { Title } from "@/components/StyledComponents/Title";
 
-const ProductDetailsContainer = ({ productId }: ProductDetails) => {
+const ProductDetailsContainer = ({
+  productId,
+}: ProductDetailsContainerProps) => {
   const router = useRouter();
   const dispatch = useDispatch<AppDispatch>();
   const [messageApi, contextHolder] = message.useMessage();
