@@ -16,6 +16,7 @@ const ImageView = ({ title, thumbnail, images }: ImageViewProps) => {
   return (
     <div className="rounded-xl border border-border bg-card p-4">
       <div className="h-80 w-full overflow-hidden rounded-lg bg-muted/40 md:h-95 lg:h-105">
+        {/* Display image using antd image */}
         <Image
           src={primaryImage}
           alt={title}
