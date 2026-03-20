@@ -14,6 +14,7 @@ export interface Product {
 
 /** Detailed product information for product details view. */
 export interface ProductDetails extends Product {
+  productId: number;
   description: string;
   price: number;
   discountPercentage: number;

@@ -5,6 +5,7 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import { Container } from "@/components/StyledComponents/Container";
+import ProductDetailsContainer from "@/components/ProductsComponents/ProductDetailsComponents/ProductDetailsContainer";
 
 const ProductDetailsPage = () => {
   const params = useParams<{ "product-id": string }>();
@@ -12,7 +13,7 @@ const ProductDetailsPage = () => {
 
   return (
     <Container>
-      <h1>Product Details</h1>
+      <ProductDetailsContainer productId={productId} />
     </Container>
   );
 };
