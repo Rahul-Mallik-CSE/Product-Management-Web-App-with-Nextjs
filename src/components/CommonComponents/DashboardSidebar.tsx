@@ -48,7 +48,7 @@ export default function DashboardSidebar() {
                 : "gap-2"
             }`}
           >
-            {/* this is the logo section */}
+            {/* This is the logo section of the sidebar */}
             <Link href="/" className="flex gap-2 ">
               {isCollapsed ? (
                 <Image
@@ -71,15 +71,14 @@ export default function DashboardSidebar() {
               )}
             </Link>
           </div>
-
-          {/* this is the menu section */}
+          {/* This is the menu section */}
           <SidebarMenu
             className={
               isCollapsed ? "px-2 space-y-1 items-center" : "md:px-1 space-y-1"
             }
           >
             {navItems.map((item) => (
-              //Called the navitem component
+              //Called the menu component here
               <NavItem
                 key={item.href}
                 href={item.href}
@@ -97,7 +96,7 @@ export default function DashboardSidebar() {
           </SidebarMenu>
         </SidebarContent>
         <SidebarFooter className="pb-16 bg-background rounded-b-4xl border-r-2 border-b-2 border-l-2 border-border shadow-neutral-600">
-          {/* Footer content can go here */}
+          {/* Footer content can go here if needed */}
         </SidebarFooter>
       </Sidebar>
     </>

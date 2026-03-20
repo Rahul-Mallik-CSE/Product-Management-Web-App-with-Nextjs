@@ -89,10 +89,13 @@ const ProductsContainer = () => {
 
   return (
     <div className="w-full space-y-4">
+      {/* This is the antd message component used to show error message when the products failed to load */}
       {contextHolder}
 
+      {/* This is the title component which will show the title of the page */}
       <Title>Products List</Title>
 
+      {/* This is the search and filter section */}
       <div className="flex w-full justify-end">
         <Space wrap>
           <Input.Search
@@ -118,8 +121,10 @@ const ProductsContainer = () => {
       </div>
 
       {isTableLoading ? (
+        //This is the Table Skeleton component which will show the skeleton loading state when the products are loading
         <TableSkeleton />
       ) : (
+        //This is the main table design component which will show the products in a table format with pagination and sorting functionality. It also has a view button which will navigate to the product details page when clicked.
         <ProductsTable
           data={tableData}
           loading={false}

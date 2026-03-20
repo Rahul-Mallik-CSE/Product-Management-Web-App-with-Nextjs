@@ -107,6 +107,7 @@ const ProductDetailsContainer = ({
 
   return (
     <div className="w-full space-y-6">
+      {/* This is  the antd alert component used to show error message when the product details failed to load   */}
       {contextHolder}
 
       <div className="flex items-center justify-between">
@@ -130,14 +131,17 @@ const ProductDetailsContainer = ({
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        {/* This is the image component which will show the product image and if there are more than 1 image then it will show the image gallery below the main image */}
         <ImageView
           title={product.title}
           thumbnail={product.thumbnail}
           images={product.images}
         />
+        {/* This is the details component which will show the product details like title, description, price, rating and stock */}
         <Details product={product} />
       </div>
 
+      {/* This is the edit drawer component which will open when the user clicks on the edit button and it will show the form to edit the product details. The form is pre-filled with the current product details and it will validate the input before allowing the user to save the changes. Note that this edit functionality is frontend-only and does not persist changes to a backend API. */}
       <EditDrawer
         open={isEditDrawerOpen}
         form={form}

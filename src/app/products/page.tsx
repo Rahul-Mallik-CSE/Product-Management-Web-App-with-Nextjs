@@ -8,7 +8,8 @@ import ProductsContainer from "@/components/ProductsComponents/ProductsContainer
 const ProductsPage = () => {
   return (
     <Container>
-       <ProductsContainer />
+      {/* called the products container component here so that it can be rendered on the products page */}
+      <ProductsContainer />
     </Container>
   );
 };

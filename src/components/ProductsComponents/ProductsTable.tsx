@@ -13,6 +13,7 @@ import type {
 } from "@/types/ProductsTypes";
 import styles from "@/scssstyle/CommonStyles.module.scss";
 
+/** This is the product table columns definition */
 export const productTableColumns: ProductTableColumnDef[] = [
   {
     title: "Title",
@@ -76,7 +77,7 @@ const ProductsTable = ({
           render: (value: string) => value.replace(/-/g, " "),
         };
       }
-
+      // This is the view button design with scss styles
       if (column.key === "action") {
         return {
           ...column,
@@ -100,6 +101,7 @@ const ProductsTable = ({
   );
 
   return (
+    // designed the table using antd table component with pagination
     <Table<Product>
       className={styles.paginationButton}
       rowKey="id"

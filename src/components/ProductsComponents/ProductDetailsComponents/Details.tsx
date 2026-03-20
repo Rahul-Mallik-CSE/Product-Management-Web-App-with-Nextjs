@@ -15,6 +15,7 @@ const Details = ({ product }: DetailsProps) => {
           <p className="text-sm md:text-base lg:text-xl font-medium text-secondary">
             Product Information
           </p>
+          {/* use the title styled component here */}
           <Title>{product.title}</Title>
         </div>
         <div className="flex items-center gap-2 text-base md:text-lg lg:text-xl font-medium text-primary">

@@ -27,7 +27,7 @@ const ImageView = ({ title, thumbnail, images }: ImageViewProps) => {
           preview
         />
       </div>
-
+      {/* If the image is more than 1 then show the image gallery  */}
       {resolvedImages.length > 1 && (
         <div className="mt-4 grid grid-cols-4 gap-2">
           {resolvedImages.slice(0, 4).map((img, index) => (

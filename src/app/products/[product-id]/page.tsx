@@ -13,6 +13,7 @@ const ProductDetailsPage = () => {
 
   return (
     <Container>
+      {/* called the details page with product id */}
       <ProductDetailsContainer productId={productId} />
     </Container>
   );
