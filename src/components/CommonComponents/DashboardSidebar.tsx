@@ -28,8 +28,7 @@ export default function DashboardSidebar() {
       label: "Products",
     },
   ];
-
-  if (pathname == "/") return null;
+  if (pathname !== "/products") return null;
 
   return (
     <>

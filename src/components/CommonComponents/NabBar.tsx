@@ -8,7 +8,7 @@ import styles from "../../scssstyle/NavBarStyles.module.scss";
 const NavBar = () => {
   const pathname = usePathname();
 
-  if (pathname == "/") return null;
+  if (pathname !== "/products") return null;
 
   return (
     <div className={styles.navBarContainer}>
