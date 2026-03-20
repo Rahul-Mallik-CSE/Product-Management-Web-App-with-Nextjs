@@ -31,10 +31,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body suppressHydrationWarning className="min-h-full flex flex-col">
         <StyledComponentsRegistry>
           <AntdRegistry>
             {/* Wrapping the entire application with Providers to ensure that Redux state is accessible throughout the app, including the LayoutWrapper and all its child components. */}
