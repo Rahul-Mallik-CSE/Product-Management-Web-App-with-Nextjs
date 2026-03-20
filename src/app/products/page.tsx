@@ -4,10 +4,11 @@
 
 import React from "react";
 import { Container } from "@/components/StyledComponents/Container";
+import ProductsContainer from "@/components/ProductsComponents/ProductsContainer";
 const ProductsPage = () => {
   return (
     <Container>
-      <h1 className="text-2xl font-bold mb-4">Products Page</h1>
+       <ProductsContainer />
     </Container>
   );
 };
